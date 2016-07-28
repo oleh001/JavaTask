@@ -1,4 +1,6 @@
-import kitchen.*;
+package task1;
+
+import task1.kitchen.*;
 
 import java.io.IOException;
 

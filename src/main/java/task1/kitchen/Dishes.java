@@ -1,4 +1,4 @@
-package kitchen;
+package task1.kitchen;
 
 import java.util.Arrays;
 

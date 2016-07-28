@@ -1,5 +1,7 @@
-import kitchen.Dishes;
-import kitchen.Drinks;
+package task1;
+
+import task1.kitchen.Dishes;
+import task1.kitchen.Drinks;
 
 import java.io.BufferedReader;
 import java.io.IOException;

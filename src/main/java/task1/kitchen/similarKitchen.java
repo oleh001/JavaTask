@@ -1,4 +1,4 @@
-package kitchen;
+package task1.kitchen;
 
 /**
  * Created by user on 27.07.2016.

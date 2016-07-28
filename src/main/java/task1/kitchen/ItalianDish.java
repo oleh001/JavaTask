@@ -1,9 +1,9 @@
-package kitchen;
+package task1.kitchen;
 
 /**
  * Created by user on 27.07.2016.
  */
-public class MexicanDish implements Restaurant {
+public class ItalianDish implements Restaurant {
 
     String customer;
     Dishes lanche;
@@ -12,7 +12,7 @@ public class MexicanDish implements Restaurant {
     boolean lemon;
     int price;
 
-    public MexicanDish(String customer) {
+    public ItalianDish(String customer) {
         this.customer = customer;
     }
 
@@ -51,7 +51,7 @@ public class MexicanDish implements Restaurant {
     }
 
     public void showOrder() {
-        System.out.print(getCustomer() + " ordered Mexican: dish - "
+        System.out.print(getCustomer() + " ordered Italian: dish - "
                 + getLanche() + " (" + getLanche().getPrice() + "$) "
                 + ", " + "drink - " + getDrinke() + " (" + getDrinke().getPrice() + "$) ");
         if (cubes) {
