@@ -49,14 +49,14 @@ public class PolishDish implements Restaurant {
         }
     }
 
-    public void showOrder(){
+    public void showOrder() {
         System.out.print(getCustomer() + " ordered Polish: dish - "
-                + getLanche() + " ( " + getLanche().getPrice() + "$) "
+                + getLanche() + " (" + getLanche().getPrice() + "$) "
                 + ", " + "drink - " + getDrinke() + " (" + getDrinke().getPrice() + "$) ");
-        if (cubes){
+        if (cubes) {
             System.out.print(" with ice cubes");
         }
-        if (lemon){
+        if (lemon) {
             System.out.print(" with lemon");
         }
         System.out.println();

@@ -15,19 +15,19 @@ public abstract class similarKitchen {
     }
 
     void lanch(Dishes dish) {
-        if (dish==null){
+        if (dish == null) {
             System.out.println("No Dishes");
-            lanche=null;
-        }else {
+            lanche = null;
+        } else {
             lanche = dish;
         }
     }
 
     void drink(Drinks drink, String[] cubeLemon) {
-        if (drink==null){
+        if (drink == null) {
             System.out.println("No Drinks");
-            drinke=null;
-        }else {
+            drinke = null;
+        } else {
             drinke = drink;
         }
         cubeLemon(cubeLemon);
@@ -48,8 +48,9 @@ public abstract class similarKitchen {
         }
     }
 
-    void showOrders(){
+    void showOrders() {
         showOrder();
     }
+
     abstract void showOrder();
 }

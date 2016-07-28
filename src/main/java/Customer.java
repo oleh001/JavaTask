@@ -7,18 +7,18 @@ import java.io.IOException;
  */
 public class Customer {
     public static void main(String[] args) throws IOException {
-        ConsoleHelpers conHel=new ConsoleHelpers();
+        ConsoleHelpers conHel = new ConsoleHelpers();
 
-        Restaurant customer1 =new PolishDish("Henk");
+        Restaurant customer1 = new PolishDish("Henk");
         customer1.lanch(conHel.getAllDishes());
-        customer1.drink(conHel.getAllDrinks(),conHel.drinkWant());
+        customer1.drink(conHel.getAllDrinks(), conHel.drinkWant());
 
-        Restaurant customer2 =new ItalianDish("Tom");
+        Restaurant customer2 = new ItalianDish("Tom");
         customer2.lanch(conHel.getAllDishes());
-        customer2.drink(conHel.getAllDrinks(),conHel.drinkWant());
+        customer2.drink(conHel.getAllDrinks(), conHel.drinkWant());
 
-        Restaurant customer3 =new MexicanDish("Jak");
+        Restaurant customer3 = new MexicanDish("Jak");
         customer3.lanch(conHel.getAllDishes());
-        customer3.drink(conHel.getAllDrinks(),conHel.drinkWant());
+        customer3.drink(conHel.getAllDrinks(), conHel.drinkWant());
     }
 }

@@ -52,7 +52,7 @@ public class ItalianDish implements Restaurant {
 
     public void showOrder() {
         System.out.print(getCustomer() + " ordered Italian: dish - "
-                + getLanche() + " ( " + getLanche().getPrice() + "$) "
+                + getLanche() + " (" + getLanche().getPrice() + "$) "
                 + ", " + "drink - " + getDrinke() + " (" + getDrinke().getPrice() + "$) ");
         if (cubes) {
             System.out.print(" with ice cubes");

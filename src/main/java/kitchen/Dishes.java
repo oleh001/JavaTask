@@ -13,7 +13,7 @@ public enum Dishes {
     private int price;
 
     Dishes(int price) {
-        this.price=price;
+        this.price = price;
     }
 
     public static String allDishesToString() {

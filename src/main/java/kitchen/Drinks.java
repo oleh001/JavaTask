@@ -12,7 +12,7 @@ public enum Drinks {
     private int price;
 
     Drinks(int price) {
-        this.price=price;
+        this.price = price;
     }
 
     public static String allDrinksToString() {

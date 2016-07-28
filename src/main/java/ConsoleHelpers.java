@@ -37,8 +37,7 @@ public class ConsoleHelpers {
             str = readString();
             if (str.equalsIgnoreCase("exit")) {
                 break;
-            }
-            else {
+            } else {
                 try {
                     listDish = Dishes.valueOf(str);
                     break;
@@ -73,12 +72,12 @@ public class ConsoleHelpers {
         }
         return listDrink;
     }
-    
+
     public String[] drinkWant() throws IOException {
         writeMessage("if you want ice cubes or/and lemon enter yes yes. If no then not not");
         String[] str = new String[2];
-        str[0]=readString();
-        str[1]=readString();
+        str[0] = readString();
+        str[1] = readString();
         return str;
     }
 }
