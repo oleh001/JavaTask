@@ -19,23 +19,25 @@ public class DateBaseMain {
             Class.forName(DATABASE_DRIVER);
         } catch (ClassNotFoundException e) {
             System.out.println(e.getMessage());
-            System.out.println("000");
         }
         try {
             dbConnection = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
             return dbConnection;
         } catch (SQLException e) {
             System.out.println(e.getMessage());
-            System.out.println("111");
         }
         return dbConnection;
     }
 
     public static void main(String[] args) throws SQLException {
-//        selectDbCountry("SELECT a.name " +
-//                "FROM country a JOIN city b ON a.CountryID=b.CountryID " +
-//                "GROUP BY b.CountryID HAVING MIN(b.Population)>400000 ");
+        System.out.println("Select countries " +
+                "where a total number of inhabitants (population) " +
+                "in all cities is greater than 400 000.");
+        selectDbCountry("SELECT a.name " +
+                "FROM country a JOIN city b ON a.CountryID=b.CountryID " +
+                "GROUP BY b.CountryID HAVING MIN(b.Population)>400000 ");
 
+        System.out.println("Select names of the countries that have no buildings at all.");
         selectDbCountry("SELECT DISTINCT a.name " +
                 "FROM country a JOIN city b ON a.CountryID=b.CountryID " +
                 "JOIN building c ON b.CityID=c.CityID  " +
@@ -63,5 +65,6 @@ public class DateBaseMain {
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
+        System.out.println("");
     }
 }
